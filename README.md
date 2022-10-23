@@ -1,25 +1,26 @@
 # Page-Rank
 
-I implemented the PageRank algorithm, using two methods.
+Am implementat algoritmul PageRank, folosind doua metode.
 
-Iterative method:
-- The algorithm is implemented using the adjacency matrix A and the matrix M
-- A link of j to i is retained in the adjacent matrix with the value 1
-- We have two pagerank matrices, one which is at step t, another which is at step t+1
+Metoda iterativa:
+	- Algoritmul este implementat cu ajutorul matricei de adiacenta A si a matricei M
+	- Un link al lui j catre i este retinut in matricea adiacenta cu valoarea 1
+	- Avem doua matrice de pagerank una care este la pasul t, alta care este la pasul t+1
 
-Algebraic method:
-- It uses a unit array
-- Create the adjacency matrix A and the matrix M
-- With their help we find the matrix K
-- R is obtained according to the formula given in the statement
+Metoda algebrica:
+	- Se foloseste de un vector unitate
+	- Creeaza matricea de adiacenta A si matricea M
+	- Cu ajutorul acestora aflam matricea K
+	- Se obtine R conform formulei date in enunt
 
-Function PR_Inv
-- For this function I used the Gram-Schmidt decomposition algorithm
-- I called the SST function, which is used by the algorithm for solving an upper triangular system
+Functia PR_Inv
+	- Pentru aceasta functie am folosit algoritmul Gram-Schmidt pentru descompuneri
+	- Am apelat functia SST, care se foloseste de algoritmul de rezolvare a unui sistem superior triunghiular
 
-PageRank function
-- Calculate PageRank indices for the three requirements
-- The 'Iterative' and 'Algebraic' functions are called for the calculation of R1 and R2
-- The elements of R2 are sorted in descending order
-- The Membership function is used to calculate the degree of membership
-- The obtained results are displayed in an output file
+Functia PageRank
+	- Calculeaza indicii PageRank pentru cele trei cerinte
+	- Se apeleaza functiile 'Iterative' si 'Algebraic' pentru calculul lui R1 si R2
+	- Se sorteaza elementele lui R2 descrescator
+	- Se foloseste functia Apartenenta pentru a calcula gradul de apartenenta
+	- Rezultatele obtinute sunt afisate intr-un fisier de output
+
